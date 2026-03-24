@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import useAuth from "../hooks/useAuth";
 import { useCart } from "../context/CartContext";
 import { useAxios } from "../hooks/useAxios";
 import Hero from "./Hero";
