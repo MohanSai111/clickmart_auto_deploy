@@ -18,5 +18,7 @@ jobs:
           key: ${{ secrets.LINODE_SSH_KEY }}
           script: |
             cd /opt/clickmart
-            git pull origin main
+            git fetch origin main
+            git reset --hard origin/main
+            docker compose down
             docker compose up --build -d
